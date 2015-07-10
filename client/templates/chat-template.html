@@ -1,0 +1,13 @@
+<template name = "appChat">
+{{#each messages}}
+	<center><div class="alert alert-info" style="width: 394px;margin-left: -3px;">
+		<b>{{name}}</b>: {{text}} <button class="btn btn-danger btn-small btnDelete">&times; </button>
+	</div></center>
+{{/each}}
+
+<center><form class="form">
+	<input type="text" class="form-control txtName" placeholder = "Username"/>
+	<input type="text" class="form-control txtText" placeholder = "Your Message"/>
+
+</form></center>
+</template>

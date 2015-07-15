@@ -19,7 +19,15 @@ Template.appChat.events({
 
 		if (event.keyCode == 13) {
 			Messages.insert({
+				SN: $(".txtSN").val(),
+				C: $(".txtC").val(),
 				name: $(".txtName").val(),
+				DOB: $(".txtDOB").val(),
+				CS: $(".txtCS").val(),
+				G: $(".txtG").val(),
+				BT: $(".txtBT").val(),
+				H: $(".txtH").val(),
+				W: $(".txtW").val(),
 				text: $(".txtText").val(),
 				createdAt: new Date()
 

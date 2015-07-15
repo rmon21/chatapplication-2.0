@@ -1,13 +1,20 @@
 <template name = "appChat">
 {{#each messages}}
 	<center><div class="alert alert-info" style="width: 394px;margin-left: -3px;">
-		<b>{{name}}</b>: {{text}} <button class="btn btn-danger btn-small btnDelete">&times; </button>
+		Student Number: <b>{{SN}}</b> , Course: <b>{{C}}</b> <br> Name: <b>{{name}}</b> , Date of Birth: <b>{{DOB}}</b> <br> Civil Status: <b>{{CS}}</b> , Gender: <b>{{G}}</b> <br> Blood Type: <b>{{BT}}</b> , Height: <b>{{H}}</b> <br> Weight: <b>{{W}}</b> , Address: <b>{{text}}</b> <button  class="btn btn-danger btn-small btnDelete">&times;</button>
 	</div></center>
 {{/each}}
 
 <center><form class="form">
-	<input type="text" class="form-control txtName" placeholder = "Username"/>
-	<input type="text" class="form-control txtText" placeholder = "Your Message"/>
-
+	<input type="text" class="form-control txtSN" placeholder="Student Number" />
+<input type="text" class="form-control txtC" placeholder="Course" />
+<input type="text" class="form-control txtname" placeholder="Name" />
+<input type="text" class="form-control txtDOB" placeholder="Date of Birth" />
+<input type="text" class="form-control txtCS" placeholder="Civil Status" />
+<input type="text" class="form-control txtG" placeholder="Gender" />
+<input type="text" class="form-control txtBT" placeholder="Blood Type" />
+<input type="text" class="form-control txtH" placeholder="Height" />
+<input type="text" class="form-control txtW" placeholder="Weight" />
+<input type="text" class="form-control txtText" placeholder="Address" />
 </form></center>
 </template>
